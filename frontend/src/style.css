@@ -1,0 +1,169 @@
+* {
+    font-family: "Raleway";
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: #656c7a;
+}
+
+#task-input {
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 1px;
+    border-color: #364050;
+    background-color: rgb(32, 35, 39);
+    color: #e7e3e3;
+    height: 40px;
+    width: 500px;
+    font-size: 1.25rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#add-task {
+    right: 780px;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(90deg, #18fafa, #2e318d, #18fafa, #2e318d);
+	background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 1.25rem;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+.sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    border-width: 1px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#google-logo {
+    position: relative;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+.task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    flex-wrap: wrap;
+    border-style: outset;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    position: relative;
+    color: white;
+    font-size: 1.125rem;
+    width: 99%;
+}
+
+.check {
+    padding-right: 10px;
+
+}
+
+#edit {
+    border: none;
+    font-weight: 700;
+    background-image: linear-gradient(to  right, #2e318d, #18fafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 1.125rem;
+}
+
+#calendar {
+    border: none;
+    font-weight: 700;
+    background-image: linear-gradient(to  right, #2e318d, #18fafa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 55px;
+
+    vertical-align: middle;
+    line-height: normal;
+    font-size: 1.125rem;
+}
+
+#add-task-calendar {
+    position: relative;
+    left: 260px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #18fafa, #2e318d, #18fafa, #2e318d);
+	background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
+    cursor: pointer;
+}
+
+#start {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+#end {
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+}
+
+#task-text-input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.125rem;
+    width: 82%;
+}
