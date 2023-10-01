@@ -41,9 +41,9 @@ app.post('/auth/google/refresh-token', async (req, res) => {
 
 
 app.use('/create-event', async (req, res) => {
-    const { currentTitle, startTime, endTime } = req.body
+    const { currentTitle, startTime, endTime } = await req.body
     const calendar = google.calendar('v3')
-    calendar.events.insert({
+    await calendar.events.insert({
     auth: oAuth2Client,
     calendarId: 'primary',
     requestBody: {
@@ -56,7 +56,9 @@ app.use('/create-event', async (req, res) => {
         dateTime: new Date(endTime),
       }
           }
-            })
+            }).catch((error) => {
+              console.error(error);
+            });
 })
 
 
